@@ -4,13 +4,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page - Aniversário</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
-    <header></header>
+    <header class="hero">
+        <div class="container">
+            <div class="hero__icon">
+                <img class="hero__logo" src="./images/gift.svg" alt="">
+                    <b>Niver da Lyly</b>
+            </div>
+            <p class="hero__text">
+                O dia mais divertido está chegando<br>
+                <span id="contador"></span>
+            </p>
+            <div class="infos_bar">
+                <ul class="infos_bar__infos">
+                    <li class="infos_bar__infos__item">
+                        <b>Localização:</b>
+                        Minha Casa - Brasília - Distrito Federal
+                    </li>
+                    <li class="infos_bar__infos__item">
+                        <b>Hora:</b>
+                        A partir de as 19:00
+                    </li>
+                    <li class="infos_bar__infos__item">
+                        <b>Quando:</b>
+                        06/07/2024
+                    </li>
+                </ul>
+                <a href="" class="button button--primary">
+                    Garanta sua vaga
+                </a>
+            </div>
 
-    <section></section>
+        </div>
+    </header>
 
+    <section class="event event--doces">
+        <div class="container" data-aos="flip-right">
+            <div class="event__details">
+                <h2 class="event__details__tittle">Doces</h2>
+                <p class="event__details__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi sunt reiciendis soluta ratione, earum enim quo alias nostrum labore iusto quam impedit corrupti totam voluptas itaque praesentium exercitationem. Quae, numquam!</p>
+            </div>
+            <img class="event__image" src="./images/doces.jpg" alt="doces">
+        </div>
+    </section>
+
+    <section class="event event--bebidas event--img-text">
+        <div class="container"  data-aos="flip-left">
+            <div class="event__details">
+                <h2 class="event__details__tittle">Bebidas</h2>
+                <p class="event__details__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi sunt reiciendis soluta ratione, earum enim quo alias nostrum labore iusto quam impedit corrupti totam voluptas itaque praesentium exercitationem. Quae, numquam!</p>
+            </div>
+            <img class="event__image" src="./images/bebidas.jpg" alt="bebidas">
+        </div>
+    </section>
+
+    <section class="event event--festa">
+        <div class="container" data-aos="flip-right">
+            <div class="event__details">
+                <h2 class="event__details__tittle">Festa</h2>
+                <p class="event__details__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi sunt reiciendis soluta ratione, earum enim quo alias nostrum labore iusto quam impedit corrupti totam voluptas itaque praesentium exercitationem. Quae, numquam!</p>
+            </div>
+            <img class="event__image" src="./images/festa.jpg" alt="festa">
+        </div>
+    </section>
+
+    <section class="event event--musica event--img-text">
+        <div class="container" data-aos="flip-left">
+            <div class="event__details">
+                <h2 class="event__details__tittle">Música</h2>
+                <p class="event__details__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi sunt reiciendis soluta ratione, earum enim quo alias nostrum labore iusto quam impedit corrupti totam voluptas itaque praesentium exercitationem. Quae, numquam!</p>
+            </div>
+            <img class="event__image" src="./images/musica.jpg" alt="musica">
+        </div>
+    </section>
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="scripts/main.js"></script>
+
 </body>
 </html>
